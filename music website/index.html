@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <script src="https://kit.fontawesome.com/e9ab862b24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="bar">
+            <li><img src="logo.png" alt="Spotify" height="50px" width="50px" id="logo"></li>
+            <li id="name">Spotify</li>
+            <li><i class="fa-solid fa-house fa-inverse fa-lg" id="home"></i></li>
+            <input type="text" name="search" id="search" placeholder="&#xF002; What do you want to listen to?" style="font-family:Arial, FontAwesome" />
+            <li id="upgrade">upgrade</li>
+            <li id="user"><i class="fa-regular fa-user fa-inverse"></i></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songlist">
+            <h2>Welcome to my Playlist</h2>
+            <div>
+                <div class="songitem">
+                    <img src="cover/1.png" alt="1">
+                    <span class="songname">Shape of You</span>
+                    <span class="duration">3:53 <i id="1" class="fa-sharp playsong fa-solid fa-circle-play fa-inverse"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="cover/1.png" alt="1">
+                    <span class="songname">Shape of You</span>
+                    <span class="duration">3:53 <i id="2" class="fa-sharp playsong fa-solid fa-circle-play fa-inverse"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="cover/1.png" alt="1">
+                    <span class="songname">Shape of You</span>
+                    <span class="duration">3:53 <i id="3" class="fa-sharp playsong fa-solid fa-circle-play fa-inverse"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="cover/1.png" alt="1">
+                    <span class="songname">Shape of You</span>
+                    <span class="duration">3:53 <i id="4" class="fa-sharp playsong fa-solid fa-circle-play fa-inverse"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="cover/1.png" alt="1">
+                    <span class="songname">Shape of You</span>
+                    <span class="duration">3:53 <i id="5" class="fa-sharp playsong fa-solid fa-circle-play fa-inverse"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="cover/1.png" alt="1">
+                    <span class="songname">Shape of You</span>
+                    <span class="duration">3:53 <i id="6" class="fa-sharp playsong fa-solid fa-circle-play fa-inverse"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="cover/1.png" alt="1">
+                    <span class="songname">Shape of You</span>
+                    <span class="duration">3:53 <i id="7" class="fa-sharp playsong fa-solid fa-circle-play fa-inverse"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="cover/1.png" alt="1">
+                    <span class="songname">Shape of You</span>
+                    <span class="duration">3:53 <i id="8" class="fa-sharp playsong fa-solid fa-circle-play fa-inverse"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="cover/1.png" alt="1">
+                    <span class="songname">Shape of You</span>
+                    <span class="duration">3:53 <i id="9" class="fa-sharp playsong fa-solid fa-circle-play fa-inverse"></i></span>
+                </div>
+                <div class="songitem">
+
+                    <img src="cover/1.png" alt="1">
+                    <span class="songname">Shape of You</span>
+                    <span class="duration">3:53 <i id="10" class="fa-sharp playsong fa-solid fa-circle-play fa-inverse"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="icons">
+            <i class="fa-solid fa-shuffle fa-inverse fa-lg shuffle" id="shuffle"></i>
+            <i class="fa-solid fa-backward-step fa-inverse fa-lg backward" id="backward"></i>
+            <i class="fa-sharp fa-solid fa-circle-play fa-inverse play fa-2x" id="play"></i>
+            <i class="fa-solid fa-forward-step fa-inverse back forward fa-lg" id="forward"></i>
+            <i class="fa-solid fa-repeat fa-inverse fa-lg repeat" id="repeat"></i>
+        </div>
+        <input type="range" name="progress" id="progress" value="0" min="0" max="100">
+        <div class="songinfo" id="songchar">
+            <img src="play.gif" alt="no gif" id='gif'>Play a song
+        </div>
+        <div class="extra">
+            <i class="fa-solid fa-layer-group fa-inverse"></i>
+            <i class="fa-solid fa-pen fa-inverse"></i>
+            <i class="fa-solid fa-eye fa-inverse"></i>
+            <i class="fa-solid fa-sliders fa-inverse"></i>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
